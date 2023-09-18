@@ -6,7 +6,7 @@ function App() {
   const [cryptoData, setCryptoData] = useState([]);
 
   useEffect(() => {
-    axios.get('http://localhost:3000/api/crypto')
+    axios.get('https://crypto-backend-1zu9.onrender.com/api/crypto')
       .then(response => {
         setCryptoData(response.data);
       })
